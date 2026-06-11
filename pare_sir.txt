@@ -175,13 +175,13 @@ server{
 
 %%%%%%%%%%%% Restart Nginx %%%%%%%%%
 
- service nginx restart
+ service nginx restart  
 -------------------------------------
 
 ********** restart ******
 
-systemctl daemon-reload
-systemctl restart pare_sir.com.gunicorn
+    systemctl daemon-reload
+    systemctl restart pare_sir.com.gunicorn
 
 --------------------------------------- ssl ------------------
   certbot --nginx
