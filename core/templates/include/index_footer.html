@@ -1,0 +1,281 @@
+{% load static %}
+
+<!-- ===== FOOTER ===== -->
+<footer class="cca-footer">
+
+    <!-- Top Wave -->
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#0A1628"/>
+        </svg>
+    </div>
+
+    <div class="footer-body">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-5">
+
+                <!-- Brand -->
+                <div class="col-lg-4">
+                    <a href="/" class="footer-brand">
+                        <div class="footer-logo-wrap">
+                            <img src="{% static 'img/logo.png' %}" alt="CCA Logo">
+                        </div>
+                        <div>
+                            <div class="footer-brand-name">छत्रपती करिअर अॅकॅडमी</div>
+                            <div class="footer-brand-loc">सावडी</div>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">
+                        स्वप्न तुमचे। प्रयत्न आमचे।<br>
+                        पोलीस भरती व शासकीय नोकरीसाठी महाराष्ट्रातील विश्वासू मार्गदर्शन केंद्र.
+                    </p>
+                    <!-- Tricolor -->
+                    <div class="footer-tricolor">
+                        <div></div><div></div><div></div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-6">
+                    <h4 class="footer-heading">द्रुत दुवे</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">मुख्यपृष्ठ</a></li>
+                        <li><a href="#about">आमच्याबद्दल</a></li>
+                        <li><a href="#courses">अभ्यासक्रम</a></li>
+                        <li><a href="#facilities">सुविधा</a></li>
+                        <li><a href="#results">निकाल</a></li>
+                        <li><a href="#contact">संपर्क</a></li>
+                    </ul>
+                </div>
+
+                <!-- Courses -->
+                <div class="col-lg-3 col-6">
+                    <h4 class="footer-heading">भरती अभ्यासक्रम</h4>
+                    <ul class="footer-links">
+                        <li><a href="#courses">पोलीस शिपाई / कॉन्स्टेबल</a></li>
+                        <li><a href="#courses">पोलीस उपनिरीक्षक (PSI)</a></li>
+                        <li><a href="#courses">SRPF / IRB</a></li>
+                        <li><a href="#courses">अग्निशमन विभाग</a></li>
+                        <li><a href="#courses">तलाठी / ग्राम सेवक</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3">
+                    <h4 class="footer-heading">संपर्क</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>सावडी, ता. करमाळा, जि. सोलापूर</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <a href="tel:9309832790">9309832790</a><br>
+                            <a href="tel:8390822602">8390822602</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>सोम - शनि, सकाळी ६ ते रात्री १०</span>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="footer-social">
+                        <a href="https://wa.me/919309832790" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                <span>© {% now "Y" %} छत्रपती करिअर अॅकॅडमी सावडी. सर्व हक्क राखीव.</span>
+                <span>प्रा. राम पारे सर — <a href="tel:9309832790">9309832790</a></span>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Back to top -->
+<button class="cca-backtop" id="backTop" title="वर जा">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<style>
+.cca-footer { background: #0A1628; position: relative; }
+
+.footer-wave { line-height: 0; background: #f4f6fb; }
+.footer-wave svg { display: block; width: 100%; height: 60px; }
+
+.footer-body { padding: 60px 0 50px; }
+
+/* ---- BRAND ---- */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    margin-bottom: 18px;
+}
+.footer-logo-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    padding: 4px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.footer-logo-wrap img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+.footer-brand-name {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+}
+.footer-brand-loc { font-size: 0.72rem; color: #FF9500; font-weight: 600; }
+.footer-tagline {
+    font-size: 0.83rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+.footer-tricolor {
+    display: flex;
+    height: 3px;
+    width: 60px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.footer-tricolor div:nth-child(1) { flex:1; background:#FF9933; }
+.footer-tricolor div:nth-child(2) { flex:1; background:#fff; }
+.footer-tricolor div:nth-child(3) { flex:1; background:#138808; }
+
+/* ---- LINKS ---- */
+.footer-heading {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #FF9500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links a {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-links a:hover { color: #FF9500; }
+
+/* ---- CONTACT ---- */
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: rgba(255,255,255,0.65);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+.footer-contact-item i { color: #FF9500; font-size: 0.9rem; margin-top: 3px; flex-shrink: 0; }
+.footer-contact-item a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.footer-contact-item a:hover { color: #FF9500; }
+
+/* ---- SOCIAL ---- */
+.footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.footer-social a {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.95rem;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+}
+.footer-social a:hover { background: #FF9500; color: #fff; border-color: #FF9500; }
+
+/* ---- BOTTOM BAR ---- */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding: 16px 0;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.4);
+}
+.footer-bottom a { color: #FF9500; text-decoration: none; }
+.footer-bottom a:hover { text-decoration: underline; }
+
+/* ---- BACK TO TOP ---- */
+.cca-backtop {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #FF9500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 16px rgba(255,149,0,0.4);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+}
+.cca-backtop.visible { opacity: 1; transform: translateY(0); }
+.cca-backtop:hover { background: #e67e00; }
+
+@media (max-width: 767px) {
+    .footer-body { padding: 40px 0 30px; }
+}
+</style>
+
+<script>
+(function(){
+    const btn = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        btn.classList.toggle('visible', window.scrollY > 400);
+    });
+    btn.addEventListener('click', function(){
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+})();
+</script>

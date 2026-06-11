@@ -1,0 +1,306 @@
+{% load static %}
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="cca-about" id="about">
+    <div class="container-fluid px-4 px-lg-5">
+
+        <!-- Section Header -->
+        <div class="cca-section-header" data-aos="fade-up">
+            <span class="section-eyebrow">आमच्याबद्दल</span>
+            <h2 class="section-title">एका समर्पित मार्गदर्शकाची <span>प्रेरणादायी कहाणी</span></h2>
+            <p class="section-sub">सावडीसारख्या छोट्या गावातून महाराष्ट्रातील शेकडो तरुणांना सरकारी नोकरीचे स्वप्न पूर्ण करण्यात मदत केली.</p>
+        </div>
+
+        <div class="row align-items-center g-5">
+
+            <!-- LEFT: Director Card -->
+            <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+                <div class="cca-director-card">
+
+                    <!-- Image -->
+                    <div class="director-img-wrap">
+                        <img src="{% static 'img/WhatsApp Image 2026-06-11 at 4.25.00 PM.jpeg' %}"
+                             alt="प्रा. राम पारे सर"
+                             class="director-img">
+                        <div class="director-img-overlay"></div>
+                    </div>
+
+                    <!-- Name plate -->
+                    <div class="director-nameplate">
+                        <div class="director-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <div class="director-name">प्रा. राम पारे सर</div>
+                            <div class="director-title">संस्थापक व मुख्य मार्गदर्शक</div>
+                        </div>
+                        <div class="director-exp-badge">
+                            <span>१४+</span>
+                            <small>वर्षे</small>
+                        </div>
+                    </div>
+
+                    <!-- Tricolor accent bar -->
+                    <div class="director-tricolor">
+                        <div></div><div></div><div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Content -->
+            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+
+                <div class="about-content">
+                    <p class="about-para">
+                        <strong>प्रा. राम पारे सर</strong> यांनी १४ वर्षांपूर्वी सावडी येथे छत्रपती करिअर अॅकॅडमीची स्थापना केली. 
+                        पोलीस भरती क्षेत्रातील त्यांचा दीर्घ अनुभव आणि ग्रामीण तरुणांप्रति असलेली बांधिलकी हीच अॅकॅडमीची खरी ताकद आहे.
+                    </p>
+                    <p class="about-para">
+                        जिल्हा निवड मार्गदर्शनापासून ते शारीरिक तयारी, लेखी परीक्षा आणि मुलाखतीपर्यंत — प्रत्येक टप्प्यावर विद्यार्थ्यांना 
+                        वैयक्तिक लक्ष दिले जाते. <strong>निकालाची हमी</strong> हे आमचे वचन आहे.
+                    </p>
+                </div>
+
+                <!-- Achievement grid -->
+                <div class="about-achievements">
+                    <div class="ach-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="ach-icon"><i class="fas fa-medal"></i></div>
+                        <div class="ach-text">
+                            <div class="ach-num">400+</div>
+                            <div class="ach-label">यशस्वी विद्यार्थी</div>
+                        </div>
+                    </div>
+                    <div class="ach-item" data-aos="zoom-in" data-aos-delay="180">
+                        <div class="ach-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="ach-text">
+                            <div class="ach-num">१४+</div>
+                            <div class="ach-label">वर्षांचा अनुभव</div>
+                        </div>
+                    </div>
+                    <div class="ach-item" data-aos="zoom-in" data-aos-delay="260">
+                        <div class="ach-icon"><i class="fas fa-running"></i></div>
+                        <div class="ach-text">
+                            <div class="ach-num">400 मी.</div>
+                            <div class="ach-label">सुसज्ज ट्रॅक</div>
+                        </div>
+                    </div>
+                    <div class="ach-item" data-aos="zoom-in" data-aos-delay="340">
+                        <div class="ach-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="ach-text">
+                            <div class="ach-num">६ तास</div>
+                            <div class="ach-label">दररोज ग्रुप स्टडी</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tagline -->
+                <div class="about-tagline">
+                    <i class="fas fa-quote-left"></i>
+                    <span>योग्य जिल्हा निवड मार्गदर्शन ते निकालाची हमी — प्रत्येक पाऊल आमच्यासोबत.</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+.cca-about {
+    background: #f4f6fb;
+    padding: 90px 0;
+}
+
+/* ---- SECTION HEADER (shared across all sections) ---- */
+.cca-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FF9500;
+    background: rgba(255,149,0,0.1);
+    border: 1px solid rgba(255,149,0,0.25);
+    padding: 5px 16px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+}
+.section-title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: #0A1628;
+    margin-bottom: 12px;
+    line-height: 1.25;
+}
+.section-title span { color: #FF9500; }
+.section-sub {
+    font-size: 0.97rem;
+    color: #6b7a90;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ---- DIRECTOR CARD ---- */
+.cca-director-card {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 16px 48px rgba(10,22,40,0.14);
+    position: relative;
+    background: #0A1628;
+}
+.director-img-wrap {
+    width: 100%;
+    aspect-ratio: 4/5;
+    position: relative;
+    overflow: hidden;
+}
+.director-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+.director-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 55%, rgba(10,22,40,0.92) 100%);
+}
+.director-nameplate {
+    position: absolute;
+    bottom: 48px;
+    left: 0; right: 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.director-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #FF9500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+.director-name {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+}
+.director-title {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.65);
+    font-weight: 500;
+}
+.director-exp-badge {
+    margin-left: auto;
+    background: #FF9500;
+    border-radius: 10px;
+    padding: 6px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+.director-exp-badge span {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #fff;
+}
+.director-exp-badge small {
+    font-size: 0.62rem;
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+}
+.director-tricolor {
+    display: flex;
+    height: 5px;
+}
+.director-tricolor div:nth-child(1) { flex:1; background:#FF9933; }
+.director-tricolor div:nth-child(2) { flex:1; background:#fff; }
+.director-tricolor div:nth-child(3) { flex:1; background:#138808; }
+
+/* ---- ABOUT CONTENT ---- */
+.about-para {
+    font-size: 0.97rem;
+    color: #3a4a5c;
+    line-height: 1.85;
+    margin-bottom: 16px;
+}
+.about-para strong { color: #0A1628; font-weight: 700; }
+
+/* ---- ACHIEVEMENTS ---- */
+.about-achievements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin: 30px 0;
+}
+.ach-item {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid rgba(10,22,40,0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.ach-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(10,22,40,0.1);
+}
+.ach-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #FF9500, #e67e00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+.ach-num {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #0A1628;
+    line-height: 1.1;
+}
+.ach-label {
+    font-size: 0.72rem;
+    color: #6b7a90;
+    font-weight: 500;
+}
+
+/* ---- TAGLINE ---- */
+.about-tagline {
+    background: #0A1628;
+    border-radius: 14px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.6;
+    border-left: 4px solid #FF9500;
+}
+.about-tagline i { color: #FF9500; font-size: 1.3rem; flex-shrink: 0; }
+
+@media (max-width: 767px) {
+    .about-achievements { grid-template-columns: 1fr 1fr; }
+    .cca-about { padding: 60px 0; }
+}
+</style>

@@ -1,0 +1,581 @@
+{% load static %}
+
+<!-- ===== HERO SECTION ===== -->
+<section class="cca-hero" id="home">
+
+    <!-- Background pattern (subtle diagonal lines) -->
+    <div class="cca-hero-bg"></div>
+
+    <div class="container-fluid px-4 px-lg-5">
+        <div class="row align-items-center min-vh-hero">
+
+            <!-- ===== LEFT: TEXT CONTENT ===== -->
+            <div class="col-lg-6 col-xl-5 cca-hero-left" data-aos="fade-right" data-aos-duration="800">
+
+                <!-- Badge -->
+                <div class="cca-hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>१४ वर्षांचा पोलीस भरती अनुभव</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="cca-hero-title">
+                    <span class="title-line-1">स्वप्न तुमचे।</span>
+                    <span class="title-line-2">प्रयत्न <em>आमचे।</em></span>
+                </h1>
+
+                <!-- Sub headline -->
+                <p class="cca-hero-sub">
+                    छत्रपती करिअर अॅकॅडमी सावडी — शासकीय नोकरी भरतीसाठी महाराष्ट्रातील विश्वासू मार्गदर्शन केंद्र. 
+                    दररोज ६ तास ग्रुप स्टडी, सुसज्ज ४०० मी. ट्रॅक आणि निकालाची हमी.
+                </p>
+
+                <!-- Stats Row -->
+                <div class="cca-hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num" data-target="14">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">वर्षांचा अनुभव</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-target="400">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">यशस्वी विद्यार्थी</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-target="6">0</span>
+                        <span class="stat-label">तास रोज अभ्यास</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="cca-hero-ctas">
+                    <a href="#contact" class="cca-btn-primary">
+                        <i class="fas fa-user-plus me-2"></i>आजच प्रवेश घ्या
+                    </a>
+                    <a href="tel:9309832790" class="cca-btn-outline">
+                        <i class="fas fa-phone me-2"></i>संपर्क करा
+                    </a>
+                </div>
+
+                <!-- Trust tags -->
+                <div class="cca-hero-tags">
+                    <span class="htag"><i class="fas fa-check-circle me-1"></i>जेवण व राहण्याची सोय</span>
+                    <span class="htag"><i class="fas fa-check-circle me-1"></i>दररोज सराव चाचणी</span>
+                    <span class="htag"><i class="fas fa-check-circle me-1"></i>निकालाची हमी</span>
+                </div>
+            </div>
+
+            <!-- ===== RIGHT: VISUAL CARD ===== -->
+            <div class="col-lg-6 col-xl-7 cca-hero-right" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+
+                <!-- Main image card -->
+                <div class="cca-hero-card">
+
+                    <!-- Image -->
+                    <div class="cca-hero-img-wrap">
+                        <img src="{% static 'img/WhatsApp Image 2026-06-11 at 4.25.00 PM.jpeg' %}"
+                             alt="Chhatrapati Career Academy Sawadi"
+                             class="cca-hero-img">
+                        <!-- Overlay gradient -->
+                        <div class="cca-hero-img-overlay"></div>
+                    </div>
+
+                    <!-- Floating card: Director Info -->
+                    <div class="cca-float-card cca-float-director">
+                        <div class="fcard-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <div class="fcard-name">प्रा. राम पारे सर</div>
+                            <div class="fcard-role">संस्थापक व मार्गदर्शक</div>
+                        </div>
+                    </div>
+
+                    <!-- Floating card: Track -->
+                    <div class="cca-float-card cca-float-track">
+                        <div class="fcard-icon-wrap">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <div>
+                            <div class="fcard-stat">400 मी.</div>
+                            <div class="fcard-label">सुसज्ज ट्रॅक</div>
+                        </div>
+                    </div>
+
+                    <!-- Logo watermark -->
+                    <div class="cca-hero-logo-mark">
+                        <img src="{% static 'img/logo.png' %}" alt="CCA">
+                    </div>
+                </div>
+
+                <!-- Bottom feature strip -->
+                <div class="cca-feature-strip">
+                    <div class="fstrip-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>सावडी, जि. सोलापूर</span>
+                    </div>
+                    <div class="fstrip-sep"></div>
+                    <div class="fstrip-item">
+                        <i class="fas fa-star"></i>
+                        <span>पोलीस भरती तज्ञ</span>
+                    </div>
+                    <div class="fstrip-sep"></div>
+                    <div class="fstrip-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>सिद्ध निकाल</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Wave divider bottom -->
+    <div class="cca-hero-wave">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f4f6fb"/>
+        </svg>
+    </div>
+</section>
+
+
+<!-- ===== HERO STYLES ===== -->
+<style>
+/* ---- BASE ---- */
+.cca-hero {
+    background: linear-gradient(135deg, #0A1628 0%, #102240 55%, #0d1e36 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0 0;
+}
+.min-vh-hero {
+    min-height: calc(100vh - 110px);
+    padding-bottom: 80px;
+}
+
+/* ---- BG PATTERN ---- */
+.cca-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 40px,
+            rgba(255,149,0,0.03) 40px,
+            rgba(255,149,0,0.03) 41px
+        );
+    pointer-events: none;
+}
+
+/* ---- BADGE ---- */
+.cca-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,149,0,0.12);
+    border: 1px solid rgba(255,149,0,0.3);
+    color: #FF9500;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 22px;
+    letter-spacing: 0.4px;
+}
+.badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #FF9500;
+    animation: blink 1.6s ease-in-out infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+}
+
+/* ---- HEADLINE ---- */
+.cca-hero-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+.title-line-1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: -0.5px;
+}
+.title-line-2 {
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    font-weight: 900;
+    color: #FFFFFF;
+    letter-spacing: -0.5px;
+}
+.title-line-2 em {
+    font-style: normal;
+    color: #FF9500;
+    position: relative;
+}
+.title-line-2 em::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #FF9500;
+    border-radius: 2px;
+    opacity: 0.5;
+}
+
+/* ---- SUBTEXT ---- */
+.cca-hero-sub {
+    color: rgba(255,255,255,0.72);
+    font-size: 0.97rem;
+    line-height: 1.75;
+    margin-bottom: 32px;
+    max-width: 520px;
+}
+
+/* ---- STATS ---- */
+.cca-hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 36px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 18px 24px;
+    width: fit-content;
+}
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+.stat-num {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #FF9500;
+    line-height: 1;
+}
+.stat-plus {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FF9500;
+    vertical-align: super;
+}
+.stat-label {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.6);
+    margin-top: 4px;
+    text-align: center;
+    font-weight: 500;
+}
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255,255,255,0.15);
+    margin: 0 20px;
+}
+
+/* ---- CTAS ---- */
+.cca-hero-ctas {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+.cca-btn-primary {
+    background: linear-gradient(135deg, #FF9500, #e67e00);
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 13px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(255,149,0,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-flex;
+    align-items: center;
+}
+.cca-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(255,149,0,0.5);
+    color: #fff !important;
+}
+.cca-btn-outline {
+    background: transparent;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 13px 28px;
+    border-radius: 50px;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+    display: inline-flex;
+    align-items: center;
+}
+.cca-btn-outline:hover {
+    border-color: #FF9500;
+    background: rgba(255,149,0,0.08);
+    color: #FF9500 !important;
+}
+
+/* ---- TRUST TAGS ---- */
+.cca-hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.htag {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.htag i { color: #4CAF50; font-size: 0.85rem; }
+
+/* ---- RIGHT SIDE ---- */
+.cca-hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ---- IMAGE CARD ---- */
+.cca-hero-card {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    border-radius: 24px;
+    overflow: visible;
+}
+.cca-hero-img-wrap {
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    position: relative;
+}
+.cca-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+.cca-hero-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(10,22,40,0.65) 100%
+    );
+}
+
+/* ---- FLOATING CARDS ---- */
+.cca-float-card {
+    position: absolute;
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 8px 32px rgba(10,22,40,0.22);
+    animation: float 4s ease-in-out infinite;
+}
+.cca-float-director {
+    bottom: -18px;
+    left: -16px;
+    animation-delay: 0s;
+}
+.cca-float-track {
+    top: 20px;
+    right: -16px;
+    animation-delay: 1s;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-8px); }
+}
+.fcard-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0A1628;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF9500;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+.fcard-name {
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: #0A1628;
+    white-space: nowrap;
+}
+.fcard-role {
+    font-size: 0.68rem;
+    color: #777;
+    font-weight: 500;
+}
+.fcard-icon-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #FF9500, #e67e00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+.fcard-stat {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #0A1628;
+}
+.fcard-label {
+    font-size: 0.68rem;
+    color: #777;
+    font-weight: 500;
+}
+
+/* ---- LOGO WATERMARK ---- */
+.cca-hero-logo-mark {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    padding: 4px;
+    overflow: hidden;
+}
+.cca-hero-logo-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* ---- FEATURE STRIP ---- */
+.cca-feature-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50px;
+    padding: 12px 28px;
+    width: 100%;
+    max-width: 480px;
+}
+.fstrip-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.fstrip-item i { color: #FF9500; font-size: 0.85rem; }
+.fstrip-sep {
+    width: 1px;
+    height: 18px;
+    background: rgba(255,255,255,0.2);
+    margin: 0 18px;
+}
+
+/* ---- WAVE ---- */
+.cca-hero-wave {
+    position: relative;
+    bottom: -2px;
+    line-height: 0;
+}
+.cca-hero-wave svg {
+    width: 100%;
+    height: 80px;
+    display: block;
+}
+
+/* ---- MOBILE ---- */
+@media (max-width: 991px) {
+    .cca-hero { padding: 50px 0 0; }
+    .min-vh-hero {
+        min-height: unset;
+        padding-bottom: 0;
+    }
+    .cca-hero-left { text-align: center; margin-bottom: 40px; }
+    .cca-hero-sub { margin: 0 auto 28px; }
+    .cca-hero-stats { margin: 0 auto 32px; }
+    .cca-hero-ctas { justify-content: center; }
+    .cca-hero-tags { justify-content: center; }
+    .cca-float-director { left: 4px; bottom: -14px; }
+    .cca-float-track { right: 4px; top: 14px; }
+    .cca-feature-strip { flex-wrap: wrap; border-radius: 16px; gap: 8px; padding: 14px 20px; }
+    .fstrip-sep { display: none; }
+}
+@media (max-width: 480px) {
+    .cca-hero-stats { flex-wrap: wrap; justify-content: center; width: 100%; }
+    .stat-divider { display: none; }
+    .cca-btn-primary,
+    .cca-btn-outline { padding: 11px 22px; font-size: 0.88rem; }
+}
+</style>
+
+
+<!-- ===== COUNTER ANIMATION ===== -->
+<script>
+(function(){
+    function animateCounter(el, target, duration) {
+        let start = 0;
+        const step = Math.ceil(target / (duration / 16));
+        const timer = setInterval(function(){
+            start += step;
+            if (start >= target) {
+                el.textContent = target;
+                clearInterval(timer);
+            } else {
+                el.textContent = start;
+            }
+        }, 16);
+    }
+
+    const counters = document.querySelectorAll('.stat-num');
+    let triggered = false;
+
+    const observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+            if (entry.isIntersecting && !triggered) {
+                triggered = true;
+                counters.forEach(function(counter){
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    animateCounter(counter, target, 1400);
+                });
+            }
+        });
+    }, { threshold: 0.5 });
+
+    if (counters.length) observer.observe(counters[0]);
+})();
+</script>

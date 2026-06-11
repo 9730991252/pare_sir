@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block head %}
+{% load static %}
+<title>{% block title %}छत्रपती करिअर अॅकॅडमी सावडी | स्वप्न तुमचे। प्रयत्न आमचे।{% endblock title %}</title>
+<link rel="shortcut icon" type="image/png" href="{% static 'img/logo.png' %}">
+<meta property="og:title" content="छत्रपती करिअर अॅकॅडमी सावडी">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website" />
+{% endblock head %}
+
+{% block content %}
+{% load static %}
+{% include 'include/index_header.html' %}
+{% include 'include/index/index_hero.html' %}
+{% include 'include/index/index_about.html' %}
+{% include 'include/index/index_facilities.html' %}
+{% include 'include/index/index_courses.html' %}
+{% include 'include/index/index_results.html' %}
+{% include 'include/index/index_contact.html' %}
+{% include 'include/index_footer.html' %}
+{% endblock content %}
