@@ -1,5 +1,5 @@
 103.150.136.82
-root
+
 cd pare_sir
 git pull
 source venv/bin/activate
@@ -9,7 +9,7 @@ systemctl daemon-reload
 systemctl restart pare_sir.com.gunicorn
 exit
 
-root
+
 cd pare_sir
 git pull
 systemctl daemon-reload
